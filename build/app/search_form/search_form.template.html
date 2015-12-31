@@ -1,0 +1,32 @@
+<form class="myForm" name="myForm" ng-submit="onSubmit()" novalidate>
+    <h1>Property Cross</h1>
+
+    <p class="header-form-search ">Use the form below to search for houses to buy.
+        You can search by place-name, postcode.</p>
+
+    <div class="form-group">
+        <label>
+            <input class="input"
+                   type="text"
+                   name="text"
+                   ng-model="city"
+                   ng-minlength="3"
+                   ng-maxlength="32"
+                   ng-pattern="/^[a-z0-9]*$/"
+                   required
+            />
+        </label>
+
+        <div class='error'
+             ng-messages='myForm.text.$error'
+             ng-if="myForm.text.$dirty" role="alert">
+            <div ng-message='pattern'>Only lowercase letters (a-z) and numbers</div>
+            <div ng-message='required'>You did not enter a field</div>
+            <div ng-message='minlength'>Your field is too short</div>
+            <div ng-message='maxlength'>Your field is too long</div>
+        </div>
+        <input id="inputs" ng-disabled="myForm.$invalid" type="submit" value="Search"
+               class="btn btn-primary btn-block"/>
+    </div>
+</form>
+

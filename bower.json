@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "authors": [
+    "Evgeniy Chaika <evgeniy.chaika.83@gmail.com>"
+  ],
+  "description": "",
+  "main": "dist/jquery.js",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6",
+    "angular-route": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "angular-messages": "~1.4.8"
+  }
+}

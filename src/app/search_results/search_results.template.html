@@ -1,0 +1,17 @@
+<div>
+    <button id="button" class="btn btn-primary btn-block" ng-click="goBack()">< Back</button>
+    <div class="matches">{{items.length}} of {{totalPages}} matches</div>
+    <ul>
+        <li class="image" ng-repeat="d in items" ng-click="viewPage(d)">
+            <img class="foto" align="left" ng-src="{{d.img_url}}"/>
+
+            <div class="txt">
+                <p>{{d.title}}</p>
+
+                <p>{{d.price_formatted}}</p>
+
+                <p>{{d.summary}}</p>
+            </div>
+        </li>
+    </ul>
+</div>

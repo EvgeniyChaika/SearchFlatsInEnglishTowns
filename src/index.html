@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="searchApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/search_form/search_form.controller.js"></script>
+    <script src="app/search_results/search_results.controller.js"></script>
+    <script src="app/property_listing/property_listing.controller.js"></script>
+    <script src="utils/data.service.js"></script>
+    <script src="utils/network.service.js"></script>
+
+
+</head>
+<body>
+<div ng-view></div>
+</body>
+</html>

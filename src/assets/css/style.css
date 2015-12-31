@@ -1,0 +1,80 @@
+
+.input {
+    width: 600px;
+
+}
+
+#inputs {
+    width: 600px;
+}
+
+.myForm {
+    width: 600px;
+    margin: 20px auto;
+}
+
+#button {
+    width: 600px;
+    margin: 20px auto;
+
+}
+
+.matches {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 600px;
+
+}
+
+ul {
+    padding-left: 0;
+    background-color: #d4d4d4;
+    width: 600px;
+    margin: 20px auto;
+}
+
+li {
+    padding: 30px 10px;
+
+    height: 360px;
+    border-bottom: 1px solid black;
+    list-style-type: none;
+}
+
+.foto {
+    padding-right: 10px;
+
+}
+
+.image:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 100%;
+    }
+
+    to {
+        -webkit-mask-position: 100%;
+    }
+}
+
+.header-form-search {
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 50px !important;
+    font-weight: 700;
+}
+
+.view {
+    width: 900px;
+    margin: 20px auto;
+}
